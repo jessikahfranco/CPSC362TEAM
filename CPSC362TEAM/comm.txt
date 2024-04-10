@@ -1,0 +1,9 @@
+g++ -c main.cpp -o main.o
+g++ -c tuffy.cpp -o tuffy.o
+g++ -c engine.cpp -o engine.o
+g++ -c enemy.cpp -o enemy.o
+g++ -c mainmenu.cpp -o mainmenu.o 
+
+g++ main.o engine.o tuffy.o enemy.o mainmenu.o -o star -lsfml-graphics -lsfml-window -lsfml-system 
+
+./star
